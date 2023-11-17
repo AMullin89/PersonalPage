@@ -1,0 +1,126 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#title {
+    display: block;
+    text-align: center;
+}
+
+#nav-items {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#intro {
+    margin: 10rem 0 0 5rem;
+}
+
+#intro-text {
+    width: 20rem;
+}
+
+#wrong {
+    text-decoration: line-through;
+}
+
+#my-skills {
+    display: flex;
+    width: 60%;
+    margin: 5rem 0 0 5rem;
+}
+
+#image-placeholder{
+    border: 2px solid black;
+    width: 15rem;
+    height: 25rem;
+}
+
+#skill-tiles {
+    margin: auto auto;
+}
+
+.skills {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.skill-tile {
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: rgb(105, 105, 225);
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#bio {
+    margin: 2rem 0 2rem 2rem;
+}
+
+#bio-link {
+    margin-left: 2rem;;
+}
+
+.project-card {
+    width: 60%;
+    display: flex;
+}
+
+.project-info {
+    margin-right: 2rem;
+}
+
+.project-img {
+    min-width: 15rem;
+    height: 15rem;
+    border: 2px solid black;
+    margin: auto auto;
+
+}
+
+.project-info-reverse {
+    margin-left: 2rem;
+}
+
+#blog-posts {
+    display: flex;
+}
+
+.blog-card {
+    width: 12rem;
+    max-width: 12rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.blog-img {
+    width: 8rem;
+    height: 8rem;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 4rem;
+}
+#links {
+    display: grid;
+    grid-template-columns: 4rem 4rem;
+
+}
+
+#socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
