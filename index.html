@@ -1,231 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ashley Mullin</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
-    />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashley Mullin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css" />
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-straight/css/uicons-bold-straight.css'>
     <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header>
-      <h3 id="title">Ashley Mullin</h3>
-      <nav>
-        <ul id="nav-items">
-          <li>About</li>
-          <li>Blog</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="intro">
-        <h1>👋 Hi, I'm Ashley | Web Developer</h1>
-        <div>
-          <i class="fi fi-brands-linkedin"></i>
-          <i class="fi fi-brands-github"></i>
-          <i class="fi fi-sr-envelope"></i>
+</head>
+
+<body>
+  <header>
+    <h3 id="title"><a href="./index.html">Ashley Mullin</a></h3>
+    <i class="fi fi-bs-menu-burger" id="burger-icon"></i>
+    <nav>
+      <ul id="nav-items">
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+
+    </nav>
+    
+  </header>
+  <main>
+    <section id="intro">
+      <div id="intro-container">
+        <div id="intro-img-container">
+          <img id="first-image" src="./assets/man2.jpg">
         </div>
-        <div id="intro-text">
-          <p>
-            Self-<span id="wrong">taught</span> teaching Web Developer 🧑🏼‍🎓
-            Life-long learner and craft beer enthusiast 🍺
-          </p>
-        </div>
-      </section>
-      <section id="my-skills">
         <div>
-          <h1>About Me</h1>
-          <div id="image-placeholder"></div>
+          <h1>Hi, I'm Ashley | Web Developer </h1>
+          <div id="social-main">
+            <a href="https://www.linkedin.com/in/ashley-mullin-b66992289"><i class="fi fi-brands-linkedin"></i></a>
+            <a href="https://github.com/AMullin89"><i class="fi fi-brands-github"></i></a>
+            <a href="mailto:aetmullin@hotmail.com"><i class="fi fi-sr-envelope"></i></a>
+          </div>
+          <div id="intro-text">
+            <p>
+              Self-<span id="wrong">taught</span> teaching Web Developer 🧑🏼‍🎓
+              Life-long learner and craft beer enthusiast 🍺
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="my-skills">
+      <div id="skills-container">
+        <div id="about-img">
+          <h1 id="about-me">About Me</h1>
+          <img id="image" src="./assets/man1.jpg"></img>
         </div>
         <div id="skill-tiles">
+          <ul class="skills">
+            <li class="skill-tile">JavaScript</li>
+            <li class="skill-tile">Node.js</li>
+            <li class="skill-tile">HTML</li>
+            <li class="skill-tile">CSS</li>
+            <li class="skill-tile">MySQL</li>
+            <li class="skill-tile">MongoDB</li>
+            <li class="skill-tile">Vue.js</li>
+            <li class="skill-tile">React</li>
+            <li class="skill-tile">Express</li>
+            <li class="skill-tile">Git</li>
+            <li class="skill-tile">EJS</li>
+            <li class="skill-tile">Typescript</li>
+          </ul>
+          <p id="bio">
+            Thanks for scrolling down this far! 🙏 I am currently a serving Police Officer in the Metropolitan Police
+            Service but I have been learning to code in my spare time for the past year. I have a few personal projects
+            under my belt and I am now looking to make a full career transition into tech! Feel free to click the link
+            below to find out more about me, or continue scrolling to check out my projects... 🫣
+          </p>
+          <a id="bio-link" href="./about.html">My story</a>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h1 id="projects-heading">Projects</h1>
+      <div class="project-card">
+        <div class="project-info">
+          <h2 class="project-name">Disney Princess Quiz</h2>
+          <h3 class="project-stack">Full Stack</h3>
+          <p class="project-stack">
+            Created for my Disney Princess obsessed daughter Princess Evelyn.
+            This application was designed to provide an empowering journey for
+            aspiring Princesses who must rid the kingdom of troublesome
+            Princes. The frontend was created using Vue.js which sends HTTP
+            requests to a custom made REST API. This API provides
+            functionality to retrieve questions from a MongoDB database and
+            also to insert new questions into that database.
+          </p>
+          <img class="project-img-narrow" src="./assets/disneyquiz.png">
           <ul class="skills">
             <li class="skill-tile">JavaScript</li>
             <li class="skill-tile">Vue.js</li>
             <li class="skill-tile">Node.js</li>
             <li class="skill-tile">HTML</li>
             <li class="skill-tile">CSS</li>
-            <li class="skill-tile">MySQL</li>
             <li class="skill-tile">MongoDB</li>
           </ul>
-          <p id="bio">
-            This is a description about me and my career to date. I will include
-            what I have achieved so far and what I am looking to achieve moving
-            forward. There migt be a few jokes or it might be very serious, I
-            haven't decided yet. What I do know is that there will be a link to
-            a full bio to read more...
+        </div>
+
+        <img class="project-img" src="./assets/disneyquiz.png">
+
+      </div>
+      <div class="project-card">
+        <img class="project-img" src="./assets/pintsandplaygrounds.png">
+        <div class="project-info-reverse">
+          <h2 class="project-name-reverse">Pints and Playgrounds</h2>
+          <h3 class="project-stack-reverse">Full Stack</h3>
+          <p class="project-stack-reverse">
+            A website designed to allow users to locate their nearest pub that
+            also has a playground for the kiddos. Once users have signed up,
+            they can submit their own local pubs which are then approved by an
+            admin before being sent to the database. This is a full stack
+            application created using, EJS on the frontend and node.js with
+            express.js on the backend. Pub and User data are stored in a
+            MongoDB database.
           </p>
-          <a id="bio-link">That link</a>
+          <img class="project-img-narrow" src="./assets/pintsandplaygrounds.png">
+          <ul class="skills">
+            <li class="skill-tile">JavaScript</li>
+            <li class="skill-tile">EJS</li>
+            <li class="skill-tile">Node.js</li>
+            <li class="skill-tile">HTML</li>
+            <li class="skill-tile">CSS</li>
+            <li class="skill-tile">MongoDB</li>
+          </ul>
         </div>
-      </section>
-      <section id="projects">
-        <h1>Projects</h1>
-        <div class="project-card">
-          <div class="project-info">
-            <h2>Disney Princess Quiz</h2>
-            <h3>Full Stack</h3>
-            <p>
-              Created for my Disney Princess obsessed daughter Princess Evelyn.
-              This application was designed to provide an empowering journey for
-              aspiring Princesses who must rid the kingdom of troublesome
-              Princes. The frontend was created using Vue.js which sends HTTP
-              requests to a custom made REST API. This API provides
-              functionality to retrieve questions from a MongoDB database and
-              also to insert new questions into that database.
-            </p>
-            <ul class="skills">
-              <li class="skill-tile">JavaScript</li>
-              <li class="skill-tile">Vue.js</li>
-              <li class="skill-tile">Node.js</li>
-              <li class="skill-tile">HTML</li>
-              <li class="skill-tile">CSS</li>
-              <li class="skill-tile">MongoDB</li>
-            </ul>
-          </div>
-          <div class="project-img"></div>
+      </div>
+      <div class="project-card">
+        <div class="project-info">
+          <h2 class="project-name">Super Speller</h2>
+          <h3 class="project-stack">Frontend</h3>
+          <p class="project-stack">
+            Created to help my daughter practice her spelling. The user
+            selects a difficulty and this dictates whether images of three,
+            four or five letter words are shown. The user then has three lives
+            to score as many points as possible by spelling the words
+            correctly. The game also features a leaderboard to add a bit of
+            competition!
+          </p>
+          <img class="project-img-narrow" src="./assets/superspeller.png">
+          <ul class="skills">
+            <li class="skill-tile">JavaScript</li>
+            <li class="skill-tile">Vue.js</li>
+            <li class="skill-tile">HTML</li>
+            <li class="skill-tile">CSS</li>
+          </ul>
         </div>
-        <div class="project-card">
-          <div class="project-img"></div>
-          <div class="project-info-reverse">
-            <h2>Pints and Playgrounds</h2>
-            <h3>Full Stack</h3>
-            <p>
-              A website designed to allow users to locate their nearest pub that
-              also has a playground for the kiddos. Once users have signed up,
-              they can submit their own local pubs which are then approved by an
-              admin before being sent to the database. This is a full stack
-              application created using, EJS on the frontend and node.js with
-              express.js on the backend. Pub and User data are stored in a
-              MongoDB database.
-            </p>
-            <ul class="skills">
-              <li class="skill-tile">JavaScript</li>
-              <li class="skill-tile">EJS</li>
-              <li class="skill-tile">Node.js</li>
-              <li class="skill-tile">HTML</li>
-              <li class="skill-tile">CSS</li>
-              <li class="skill-tile">MongoDB</li>
-            </ul>
-          </div>
+        <img class="project-img" src="./assets/superspeller.png">
+      </div>
+      <div class="project-card">
+        <img class="project-img" src="./assets/trackman.png">
+        <div class="project-info-reverse">
+          <h2 class="project-name-reverse">Trackman</h2>
+          <h3 class="project-stack-reverse">Full Stack</h3>
+          <p class="project-stack-reverse">
+            A dummy website designed to assist law enforcement agencies in
+            tracking and locating stolen vehicles. Users are required to sign
+            up before they are able to view a map with pins showing the
+            location of stolen vehicles. Vehicles can be added as well as
+            having their location and status updated by certain authorised
+            users. An EJS frontend communicates with a Node.js backend and a
+            MySQL database.
+          </p>
+          <img class="project-img-narrow" src="./assets/trackman.png">
+          <ul class="skills">
+            <li class="skill-tile">JavaScript</li>
+            <li class="skill-tile">EJS</li>
+            <li class="skill-tile">Node.js</li>
+            <li class="skill-tile">HTML</li>
+            <li class="skill-tile">CSS</li>
+            <li class="skill-tile">MySQL</li>
+          </ul>
         </div>
-        <div class="project-card">
-          <div class="project-info">
-            <h2>Super Speller</h2>
-            <h3>Frontend</h3>
-            <p>
-              Created to help my daughter practice her spelling. The user
-              selects a difficulty and this dictates whether images of three,
-              four or five letter words are shown. The user then has three lives
-              to score as many points as possible by spelling the words
-              correctly. The game also features a leaderboard to add a bit of
-              competition!
-            </p>
-            <ul class="skills">
-              <li class="skill-tile">JavaScript</li>
-              <li class="skill-tile">Vue.js</li>
-              <li class="skill-tile">HTML</li>
-              <li class="skill-tile">CSS</li>
-            </ul>
-          </div>
-          <div class="project-img"></div>
+      </div>
+    </section>
+    <section id="blog">
+      <h1>Blog</h1>
+      <div id="blog-posts">
+        <div class="blog-card">
+          <img class="blog-img" src="./assets/manceleb.jpg">
+          <h4 class="blog-title">My Coding Journey</h4>
+          <p class="blog-description">
+            A little bit about me, how I got into coding and my journey so
+            far.
+          </p>
+          <a>Read</a>
         </div>
-        <div class="project-card">
-          <div class="project-img"></div>
-          <div class="project-info-reverse">
-            <h2>Trackman</h2>
-            <h3>Full Stack</h3>
-            <p>
-              A dummy website designed to assist law enforcement agencies in
-              tracking and locating stolen vehicles. Users are required to sign
-              up before they are able to view a map with pins showing the
-              location of stolen vehicles. Vehicles can be added as well as
-              having their location and status updated by certain authorised
-              users. An EJS frontend communicates with a Node.js backend and a
-              MySQL database.
-            </p>
-            <ul class="skills">
-              <li class="skill-tile">JavaScript</li>
-              <li class="skill-tile">EJS</li>
-              <li class="skill-tile">Node.js</li>
-              <li class="skill-tile">HTML</li>
-              <li class="skill-tile">CSS</li>
-              <li class="skill-tile">MySQL</li>
-            </ul>
-          </div>
+        <div class="blog-card">
+          <img class="blog-img" src="./assets/manidea.jpg">
+          <h4 class="blog-title">Weekly Coding Update</h4>
+          <p class="blog-description">
+            An update on what I've been up to this week and what the plan is going forward!
+          </p>
+          <a>Read</a>
         </div>
-      </section>
-      <section id="blog">
-        <h1>Blog</h1>
-        <div id="blog-posts">
-          <div class="blog-card">
-            <div class="blog-img"></div>
-            <h4 class="blog-title">My Coding Journey</h4>
-            <p class="blog-description">
-              A little bit about me, how I got into coding and my journey so
-              far.
-            </p>
-            <a>Read</a>
-          </div>
-          <div class="blog-card">
-            <div class="blog-img"></div>
-            <h4 class="blog-title">My Coding Journey</h4>
-            <p class="blog-description">
-              A little bit about me, how I got into coding and my journey so
-              far.
-            </p>
-            <a>Read</a>
-          </div>
-          <div class="blog-card">
-            <div class="blog-img"></div>
-            <h4 class="blog-title">My Coding Journey</h4>
-            <p class="blog-description">
-              A little bit about me, how I got into coding and my journey so
-              far.
-            </p>
-            <a>Read</a>
-          </div>
-          <div class="blog-card">
-            <div class="blog-img"></div>
-            <h4 class="blog-title">My Coding Journey</h4>
-            <p class="blog-description">
-              A little bit about me, how I got into coding and my journey so
-              far.
-            </p>
-            <a>Read</a>
-          </div>
+        <div class="blog-card">
+          <img class="blog-img" src="./assets/mansmiling.jpg">
+          <h4 class="blog-title">My 3 Biggest Mistakes</h4>
+          <p class="blog-description">
+            A summary of 3 of the biggest mistakes I feel that I have made so far while learning to code.
+          </p>
+          <a>Read</a>
         </div>
-      </section>
-      <footer>
-        <div id="name">
-          <h4>Ashley Mullin</h4>
-          <p>Website made by me!</p>
+        <div class="blog-card">
+          <img class="blog-img" src="./assets/manthinking.jpg">
+          <h4 class="blog-title">The Impact of ChatGPT</h4>
+          <p class="blog-description">
+            A look into the current and future impact that ChatGPT has had and will have on web development.
+          </p>
+          <a>Read</a>
         </div>
-        <div id="links">
-          <a>About</a>
-          <a>Projects</a>
-          <a>Blog</a>
-          <a>Contact</a>
-        </div>
-        <div id="socials">
-          <i class="fi fi-brands-linkedin"></i>
-          <i class="fi fi-brands-github"></i>
-          <i class="fi fi-sr-envelope"></i>
-        </div>
-      </footer>
-    </main>
-  </body>
+      </div>
+    </section>
+    <footer>
+      <div id="name">
+        <h4>Ashley Mullin</h4>
+        <p>Website made by me!</p>
+      </div>
+      <div id="links">
+        <a href="./about.html">About</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+      <div id="socials">
+<a href="https://www.linkedin.com/in/ashley-mullin-b66992289"><i class="fi fi-brands-linkedin"></i></a>
+            <a href="https://github.com/AMullin89"><i class="fi fi-brands-github"></i></a>
+            <a href="mailto:aetmullin@hotmail.com"><i class="fi fi-sr-envelope"></i></a>
+      </div>
+    </footer>
+  </main>
+</body>
+
 </html>

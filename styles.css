@@ -1,5 +1,23 @@
-body {
+body, html {
     font-family: 'Lato', sans-serif;
+    background-color: #EFFAFD;
+    color: #4A8BDF;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+header {
+    color: rgb(46, 45, 45);
+    background-color: white;
+    border: 1px solid rgb(46, 45, 45);
+    margin: 0;
+    width: 100%;
 }
 
 #title {
@@ -13,32 +31,97 @@ body {
     justify-content: space-around;
 }
 
+#nav-items li {
+    border-bottom: 5px solid #A0006D;
+}
+
+#nav-items li:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#burger-icon {
+    font-size: 2.5rem;
+}
+
+#intro-container {
+    display: flex;
+}
+
 #intro {
     margin: 10rem 0 0 5rem;
+    font-size: 1.5rem;
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+#intro h1 {
+    font-size: 3.5rem;
+}
+
+#social-main {
+    color: #A0006D;
+    font-size: 2rem;
+}
+#social-main i:hover {
+    color: #ce96bc;
+    cursor: pointer;
 }
 
 #intro-text {
-    width: 20rem;
+    
+    text-wrap: wrap;
 }
 
 #wrong {
     text-decoration: line-through;
 }
 
-#my-skills {
-    display: flex;
-    width: 60%;
-    margin: 5rem 0 0 5rem;
+
+#first-image {
+    width: 12rem;
 }
 
-#image-placeholder{
-    border: 2px solid black;
-    width: 15rem;
-    height: 25rem;
+#my-skills {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    background-color: #4A8BDF;
+    color: #EFFAFD;
+    justify-content: right;
+    margin-right: 4rem;
+    
+}
+
+#skills-container {
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+}
+
+#about-me {
+    text-align: right;
+    font-size: 2rem;
+    border-bottom: 10px double #A0006D;
+    width:fit-content
+}
+
+#image {
+    width: 10rem;
 }
 
 #skill-tiles {
-    margin: auto auto;
+    margin: auto 2rem auto 0;
+    width: 80%
+
 }
 
 .skills {
@@ -52,23 +135,63 @@ body {
 .skill-tile {
     font-weight: bold;
     font-size: 1rem;
-    background-color: rgb(105, 105, 225);
+    background-color: #A0006D;
+    color: white;
     padding: 0.5rem;
     border-radius: 10px;
     box-shadow: 2px 2px 2px black;
 }
+
 
 #bio {
     margin: 2rem 0 2rem 2rem;
 }
 
 #bio-link {
-    margin-left: 2rem;;
+    margin-left: 2rem;
+    text-decoration: underline;
+}
+
+
+#projects {
+    margin-left: 1rem;
+}
+
+#projects-heading {
+        font-size: 2rem;
+        border-bottom: 10px double #A0006D;
+        width:fit-content;
+        margin-bottom: 4rem;
 }
 
 .project-card {
     width: 60%;
     display: flex;
+    background-color: #4A8BDF;
+    color: #EFFAFD;
+    border-right: 5px solid #A0006D;
+    border-bottom: 5px solid #A0006D;
+    margin: 0 auto 5rem auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px ;
+
+}
+
+.project-name {
+    border-bottom: 5px solid #A0006D;
+    font-size: 2rem;
+}
+
+.project-name-reverse {
+    border-bottom: 5px solid #A0006D;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.project-stack-reverse {
+    text-align: right;
 }
 
 .project-info {
@@ -77,45 +200,101 @@ body {
 
 .project-img {
     min-width: 15rem;
-    height: 15rem;
-    border: 2px solid black;
+    box-shadow: 2px 2px 2px #EFFAFD;
+    border-radius: 15px;
     margin: auto auto;
+}
 
+.project-img-narrow {
+    display: none;
+        min-width: 5rem;
+            min-height: 5rem;
+            max-width: 15rem;
+            max-height: 15rem;
+            box-shadow: 2px 2px 2px #EFFAFD;
+            border-radius: 15px;
+            margin: auto auto;
+}
+
+.project-img:hover {
+    cursor: pointer;
 }
 
 .project-info-reverse {
     margin-left: 2rem;
 }
 
+#blog {
+    background-color: #4A8BDF;
+    color: #EFFAFD;
+    padding-bottom: 4rem;
+    padding-top: 1rem;
+    height: fit-content;
+}
+
+#blog h1 {
+        font-size: 2rem;
+        border-bottom: 10px double #A0006D;
+        margin: auto 4rem 4rem auto;
+        width:fit-content;
+        text-align: right;
+        
+}
+
 #blog-posts {
     display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .blog-card {
-    width: 12rem;
+    min-width: 5rem;
     max-width: 12rem;
-    text-align: center;
-    margin-top: 2rem;
+    text-align: left;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.blog-card a {
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    border-bottom: 5px solid #A0006D;
+    width: fit-content;
+}
+
+.blog-card a:hover {
+    cursor: pointer;
+}
+
+
+
 .blog-img {
-    width: 8rem;
-    height: 8rem;
-    border: 2px solid black;
+    width: 15rem;
+    height: 13rem;
     margin: 0 auto;
+}
+
+.blog-description {
+    font-size: 1rem;
 }
 
 footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-content: center;
-    margin-top: 4rem;
+    align-items: center;
+    color: rgb(46, 45, 45);
+    background-color: white;
+    border: 1px solid rgb(46, 45, 45);
 }
 #links {
     display: grid;
     grid-template-columns: 4rem 4rem;
-
+    gap: 20px;
 }
 
 #socials {
@@ -124,3 +303,106 @@ footer {
     font-size: 2rem;
 }
 
+@media screen and (max-width: 1210px){
+    .project-img-narrow {
+        display: block;
+    }
+
+    .project-img {
+        display: none;
+    }
+
+    .project-stack-reverse {
+        text-align: center;
+    }
+
+    .project-stack {
+        text-align: center;
+    }
+
+    .project-name {
+        text-align: center;
+    }
+
+    .project-name-reverse {
+        text-align: center;
+    }
+
+    .skills {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .project-info {
+        margin-right: 0rem;
+    }
+
+    .project-info-reverse {
+        margin-left: 0rem;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #skills-container {
+        margin: 0.5rem auto 0.5rem auto;
+        
+    }
+}
+@media screen and (max-width: 769px) {
+    header nav {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem 0 1rem;
+    }
+
+    #intro {
+        margin-top: 5rem;
+        margin-left: 1rem;
+    }
+
+    #intro h1 {
+        font-size: 2rem;
+    }
+
+    #my-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skill-tiles {
+        margin-right: 0;
+    }
+
+    #skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #bio {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #bio-link {
+        width: 100%;
+
+        
+    }
+
+    #about-img {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #burger-icon {
+        display: none;
+    }
+}

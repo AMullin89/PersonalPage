@@ -1,0 +1,17 @@
+#about-main {
+    text-align: left;
+    width: 80%;
+}
+
+#about-main h3 {
+    color: #A0006D;
+}
+
+p {
+    color: rgb(46, 45, 45);
+}
+
+span {
+    color: #4A8BDF;
+    font-weight: bold;
+}
